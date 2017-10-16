@@ -20,19 +20,13 @@ function readLine() {
 
 /////////////// ignore above this line ////////////////////
 
-function solveMeFirst(a, b) {
-  // Hint: Type return a+b below   
-  return a + b;
-}
-
 function main() {
-  // write your code here.
-  // call `readLine()` to read a line.
-  // use console.log() to write to stdout
-
-  var a = parseInt(readLine());
-  var b = parseInt(readLine());;
-
-  var res = solveMeFirst(a, b);
-  console.log(res);
+  var n = parseInt(readLine());
+  arr = readLine().split(' ');
+  arr = arr.map(Number);
+  var sum = 0;
+  for (var i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  console.log(sum);
 }
